@@ -1,9 +1,11 @@
 import react from "react";
+import Dropdown from "./Dropdown";
 
-const StudentSignin = () => {
+const StudentSignin = ({ classes, selected, onSelectedChange }) => {
+  
   return (
     <div class="form-container">
-      <form action="">
+      <form action="./TestConnect.php" method="post">
         <div class="ui labeled input name-input">
           <div class="ui custom label">Name</div>
           <input
@@ -19,9 +21,9 @@ const StudentSignin = () => {
           <input
             type="email"
             class="std-name"
-            name="name"
+            name="std-name"
             placeholder="Email"
-            id="std-name"
+            id="std-email"
           />
         </div>
         <div class="ui labeled input password-input">
@@ -30,8 +32,8 @@ const StudentSignin = () => {
             type="password"
             class="std-name"
             placeholder="Password"
-            name="name"
-            id="std-name"
+            name="password"
+            id="password"
           />
         </div>
 
@@ -40,9 +42,9 @@ const StudentSignin = () => {
           <input
             type="password"
             class="std-password"
-            name="name"
+            name="confirm-password"
             placeholder="Confirm Password"
-            id="std-name"
+            id="confirm-password"
           />
         </div>
 
@@ -50,12 +52,19 @@ const StudentSignin = () => {
           <div class="ui labeled input class-input">
             <div class="ui custom label">Class</div>
             <input
-              type="text"
+              type=""
               class="std-class"
               placeholder="Class"
-              name="name"
-              id="std-name"
+              name="std-class"
+              id="std-class"
             />
+            {/* <div>
+              <Dropdown
+                classes={classes}
+                selected={selected}
+                onSelectedChange={setSelected}
+              />
+            </div> */}
           </div>
           <h5 class="new-student-log-in">
             Already have an account? <span>Log in</span>

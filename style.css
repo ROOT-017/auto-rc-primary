@@ -1,0 +1,20 @@
+:root {
+  --primary-color: #cce2e9;
+  --secondary-color: #eaf1f2;
+  --background-color: #eff4f6;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  background-color: var(--background-color);
+}
+.sub-container {
+  margin: auto auto;
+  height: 60%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+}

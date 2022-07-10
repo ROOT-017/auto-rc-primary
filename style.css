@@ -3,6 +3,11 @@
   --secondary-color: #eaf1f2;
   --background-color: #eff4f6;
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 .container {
   height: 100vh;
@@ -11,10 +16,87 @@
 }
 .sub-container {
   margin: auto auto;
-  height: 60%;
-  width: 70%;
+  height: 90%;
+  width: 50%;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
   display: flex;
+  flex-direction: column;
+}
+.header-container {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.logo {
+  margin: 0 0 0 50%;
+}
+.ellipsis {
+  margin: auto auto;
+}
+.fa-ellipsis {
+  transform: rotate(-90deg);
+}
+.school-name {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--secondary-color);
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  width: 9rem;
+}
+.custom.label {
+  width: 6rem !important;
+}
+.name-input,
+.password-input {
+  padding: 7px 0;
+}
+.class-input {
+  padding: 7px 0 0 0;
+}
+.password-input * {
+  margin: 0;
+}
+
+.std-password,
+.teacher-password,
+.std-class {
+  width: 24rem;
+}
+.custom.std-password,
+.custom.std-name {
+  width: 21rem !important;
+}
+.button-container {
+  margin: 4em 0;
+}
+button {
+  width: 30rem;
+}
+h5.new-student-log-in {
+  margin: 0;
+}
+
+.ui.label,
+.ui.button {
+  background-color: var(--primary-color);
+}
+span {
+  color: var(--primary-color);
 }

@@ -32,7 +32,7 @@ const LoginLayOut = () => {
             <div>STUDENT LOGIN</div>
           </div>
         </div>
-        {<TeacherSignin />}
+        {<StudentSignin />}
       </div>
     </div>
   );

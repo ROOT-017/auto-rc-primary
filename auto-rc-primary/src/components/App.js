@@ -1,8 +1,10 @@
+import Styles from "./styles/Styles.css"
 import React from "react"
-import StudentLogin from "./StudentLogin";
+import LoginLayOut from "./LoginLayOut";
+
 function App() {
   return (
-    < StudentLogin/>
+    <LoginLayOut/>
   );
 }
 
